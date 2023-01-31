@@ -1,28 +1,30 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
-    padding: 0;
-    margin: 0;
-}
-
-.header {
-    background-color: #333;
-    color: white;
     text-align: center;
-    padding: 1em;
 }
 
-.header h1 {
-    margin: 0;
+h1 {
+    font-size: 2em;
+    margin-top: 2em;
+    color: #333;
+}
+
+.description {
+    margin-top: 1em;
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
 }
 
 .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: left;
+    padding: 1em;
     background-color: #333;
     color: white;
-    padding: 0.5em;
 }
 
 .navigation a {
@@ -31,92 +33,30 @@ body {
     margin-right: 1em;
 }
 
-.main {
-    padding: 2em;
-    text-align: center;
-}
-
-.welcome {
-    background-color: white;
-    padding: 1em;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    margin-bottom: 2em;
-}
-
-.welcome h2 {
-    margin: 0;
-}
-
-.about {
-    background-color: white;
-    padding: 1em;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    margin-bottom: 2em;
-}
-
-.about h2 {
-    margin: 0;
-}
-
-.features {
-    background-color: white;
-    padding: 1em;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    margin-bottom: 2em;
-}
-
-.features h2 {
-    margin: 0;
-}
-
-.login {
-    background-color: white;
-    padding: 1em;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    margin-bottom: 2em;
-}
-
-.login h2 {
-    margin: 0;
-}
-
-.signup {
-    background-color: white;
-    padding: 1em;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    margin-bottom: 2em;
-}
-
-.signup h2 {
-    margin: 0;
-}
-
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 2em;
+    display: inline-block;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #ccc;
 }
 
 label {
+    font-size: 1em;
+    color: #333;
+    display: block;
     margin-top: 1em;
-    font-size: 0.8em;
 }
 
-input[type="email"], input[type="password"], input[type="name"] {
-    width: 60%;
+input[type="text"], input[type="password"] {
     padding: 0.5em;
+    width: 70%;
     font-size: 1em;
-    margin-top: 1em;
+    margin-top: 0.5em;
     border-radius: 5px;
     border: none;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1)
 }
-
 
 button[type="submit"] {
     width: 20%;
@@ -144,5 +84,40 @@ button[type="submit"]:hover {
 
 .footer p {
     margin: 0;
-    font-size: 0.8em;
+    font-size: 0
+}
+
+
+@media (max-width: 768px) {
+    form {
+        width: 80%;
+    }
+
+    input[type="text"], input[type="password"] {
+        width: 100%;
+    }
+
+    button[type="submit"] {
+        width: 40%;
+        margin-left: 30%;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .description {
+        font-size: 1em;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    button[type="submit"] {
+        width: 50%;
+        margin-left: 25%;
+    }
 }
