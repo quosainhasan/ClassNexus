@@ -1,48 +1,46 @@
 [
-{
-  "id": 1,
-  "username": "student1",
-  "email": "student1@gmail.com",
-  "password": "student123",
-  "role": "student",
-  "attendance": [
-    { "date": "2022-01-01", "status": "present" },
-    { "date": "2022-01-02", "status": "absent" },
-    { "date": "2022-01-03", "status": "present" }
-  ],
-  "notes": [
-    { "subject": "math", "notes": "Chapters 1 and 2 covered today" },
-    { "subject": "history", "notes": "Lecture on World War II" }
-  ],
-  "timetable": [
-    { "day": "Monday", "subjects": ["math", "history"] },
-    { "day": "Tuesday", "subjects": ["english", "science"] }
-  ],
-  "profile": {
-    "name": "John Doe",
-    "qrCode": "abcdefghijklmnopqrstuvwxyz"
+  {
+    "id": 1,
+    "username": "student1",
+    "email": "student1@gmail.com",
+    "password": "student123",
+    "role": "student",
+    "attendance": [
+      { "date": "2022-01-01", "status": "present" },
+      { "date": "2022-01-02", "status": "absent" },
+      { "date": "2022-01-03", "status": "present" }
+    ],
+    "notes": [
+      { "subject": "math", "notes": "Chapters 1 and 2 covered today" },
+      { "subject": "history", "notes": "Lecture on World War II" }
+    ],
+    "timetable": [
+      { "day": "Monday", "subjects": ["math", "history"] },
+      { "day": "Tuesday", "subjects": ["english", "science"] }
+    ],
+    "profile": {
+      "name": "John Doe",
+      "qrCode": "abcdefghijklmnopqrstuvwxyz"
+    }
+  },
+  {
+    "id": 2,
+    "username": "teacher1",
+    "email": "teacher1@gmail.com",
+    "password": "teacher123",
+    "role": "teacher",
+    "attendance": [],
+    "notes": [
+      { "subject": "math", "notes": "Chapters 1 and 2 covered today" },
+      { "subject": "history", "notes": "Lecture on World War II" }
+    ],
+    "timetable": [
+      { "day": "Monday", "subjects": ["math", "history"] },
+      { "day": "Tuesday", "subjects": ["english", "science"] }
+    ],
+    "classes": [
+      { "subject": "math", "students": [1, 2, 3, 4] },
+      { "subject": "history", "students": [1, 2, 3] }
+    ]
   }
-},
-
-{
-  "id": 2,
-  "username": "teacher1",
-  "email": "teacher1@gmail.com",
-  "password": "teacher123",
-  "role": "teacher",
-  "attendance": [],
-  "notes": [
-    { "subject": "math", "notes": "Chapters 1 and 2 covered today" },
-    { "subject": "history", "notes": "Lecture on World War II" }
-  ],
-  "timetable": [
-    { "day": "Monday", "subjects": ["math", "history"] },
-    { "day": "Tuesday", "subjects": ["english", "science"] }
-  ],
-  "classes": [
-    { "subject": "math", "students": [1, 2, 3, 4] },
-    { "subject": "history", "students": [1, 2, 3] }
-  ]
-}
-
 ]
